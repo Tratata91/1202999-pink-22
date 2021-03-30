@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Pink</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
@@ -51,19 +51,36 @@
             </ul>
           </div>
         </nav>
+        <section class="app-download">
+          <h1 class="visually-hidden">PINK APP</h1>
+          <p class="app-download__text">Взгляните на жизнь иначе!</p>
+          <a href="https://www.apple.com/ru/app-store/" class="app-download__link" title="Загрузить приложение с App Store">Скачать приложение</a>
+          <span class="app-download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
+          <ul class="app-download__list">
+            <li class="app-download__list-item">
+              <a href="https://www.apple.com/ru/app-store/" title="Загрузка приложения для iOS">
+                <img src="./img/apple-logo.svg" alt="App Store">
+              </a>
+            </li>
+            <li class="app-download__list-item">
+              <a href="https://play.google.com/store/apps/" title="Загрузка приложения для Android">
+                <img src="./img/android-logo.svg" alt="Android Market">
+              </a>
+            </li>
+            <li class="app-download__list-item">
+              <a href="https://www.microsoft.com/ru-by/store/apps/windows" title="Загрузка приложения для Windows">
+                <img src="./img/microsoft-logo.svg" alt="Microsoft Store">
+              </a>
+            </li>
+          </ul>
+        </section>
     </header>
-    <section class="app-download">
-      <h1 class="visually-hidden">PINK APP</h1>
-      <p class="app-download__text">Взгляните на жизнь иначе!</p>
-      <a href="#" class="app-download__link" title="Скачать приложение">Скачать приложение</a>
-      <span class="app-download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
-    </section>
     <section class="description">
       <h2 class="visually-hidden">Описание</h2>
-      <ul class="description__offer">
-        <li class="description__offer-item">Устали от серости мегаполиса?</li>
-        <li class="description__offer-item">Нам есть что вам предложить!</li>
-      </ul>
+      <h2 class="description__offer">
+        <span class="description__offer-item">Устали от серости мегаполиса?</span>
+        <span class="description__offer-item">Нам есть что вам предложить!</span>
+      </h2>
       <ul class="description__advantages">
         <li class="description__advantages-item">
           <p>Поднимает настроение</p>
@@ -88,58 +105,79 @@
             взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </div>
-        <div class="reviews__slider-buttons">
-          <div class="reviews__slider-buttons-item"></div>
-          <div class="reviews__slider-buttons-item"></div>
-          <div class="reviews__slider-buttons-item"></div>
+        <div class="slider-buttons">
+          <button class="slider-buttons__item" aria-label="первый слайд"></button>
+          <button class="slider-buttons__item" aria-label="второй слайд"></button>
+          <button class="slider-buttons__item" aria-label="третий слайд"></button>
         </div>
       </div>
     </section>
     <section class="tariffs">
       <h2 class="visually-hidden">Тарифы</h2>
-      <div class="tariffs__plan">
-        <div class="tariffs__plan-item">
-          <p>база</p>
-          <span>1,99 USD</span>
-        </div>
-        <div class="tariffs__plan-item hit">
-          <p>стандарт</p>
-          <span>3,99 USD</span>
-        </div>
-        <div class="tariffs__plan-item">
-          <p>анлим</p>
-          <span>9,99 USD</span>
-        </div>
-      </div>
       <table class="tariffs__table">
         <tr>
+          <td class="visually-hidden">
+            <h3>Тариф</h3>
+          </td>
+          <td>база</td>
+          <td>стандарт</td>
+          <td>анлим</td>
+        </tr>
+        <tr>
+          <td class="visually-hidden">
+            <h3>Цена</h3>
+          </td>
+          <td>1,99 USD</td>
+          <td>3,99 USD</td>
+          <td>9,99 USD</td>
+        </tr>
+        <tr>
           <td>Розовый фильтр</td>
-          <td>Розовый фильтр</td>
-          <td>Розовый фильтр</td>
+          <td>
+            <span class="visually-hidden">да</span>
+          </td>
+          <td>
+            <span class="visually-hidden">да</span>
+          </td>
+          <td>
+            <span class="visually-hidden">да</span>
+          </td>
         </tr>
         <tr>
           <td>Смайлики</td>
-          <td>Смайлики</td>
-          <td>Смайлики</td>
+          <td>
+            <span class="visually-hidden">нет</span>
+          </td>
+          <td>
+            <span class="visually-hidden">да</span>
+          </td>
+          <td>
+            <span class="visually-hidden">да</span>
         </tr>
         <tr>
           <td>Комментарии</td>
-          <td>Комментарии</td>
-          <td>Комментарии</td>
+          <td>
+            <span class="visually-hidden">нет</span>
+          </td>
+          <td>
+            <span class="visually-hidden">нет</span>
+          </td>
+          <td>
+            <span class="visually-hidden">да</span>
         </tr>
       </table>
-      <div class="tariffs__slider-buttons">
-        <div class="tariffs__slider-buttons-item"></div>
-        <div class="tariffs__slider-buttons-item"></div>
-        <div class="tariffs__slider-buttons-item"></div>
+      <div class="slider-buttons">
+        <button class="slider-buttons__item" aria-label="первый слайд"></button>
+        <button class="slider-buttons__item" aria-label="второй слайд"></button>
+        <button class="slider-buttons__item" aria-label="третий слайд"></button>
       </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
+      <h2 class="contacts__heading">
+        Остались вопросы? Свяжитесь с нами!
+      </h2>
       <ul class="contacts__list">
-        <li class="contacts__list-item">
-          <p>Остались вопросы? Свяжитесь с нами!</p>
-        </li>
         <li class="contacts__list-item">
           <span>Звоните:</span>
           <a class="contacts__list-item-phone" href="tel:+78125556666" title="телефон">тел. +7 (812) 555-66-66</a>
@@ -171,23 +209,20 @@
       </div>
       <ul class="footer__social-list">
         <li class="footer__social-item">
-          <a href="#" class="footer__social-image" title="Twitter">
-            <img src="./img/twitter.svg" alt="Twitter" width="18" height="14">
+          <a href="#" class="footer__social-image--twitter" title="Twitter">
           </a>
         </li>
         <li class="footer__social-item">
-          <a href="#" class="footer__social-image" title="Facebook">
-            <img src="./img/facebook.svg" alt="Facebook" width="9" height="18">
+          <a href="#" class="footer__social-image--facebook" title="Facebook">
           </a>
         </li>
         <li class="footer__social-item">
-          <a href="#" class="footer__social-image" title="Youtube">
-            <img src="./img/youtube.svg" alt="Youtube" width="15" height="13">
+          <a href="#" class="footer__social-image--youtube" title="Youtube">
           </a>
         </li>
       </ul>
       <div class="footer__developers">
-        <a href="htmlacademy.ru"> Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive"> Разработано
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
           </svg>
