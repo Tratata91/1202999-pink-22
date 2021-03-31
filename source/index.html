@@ -19,7 +19,7 @@
 </head>
 <body class="page-body">
     <header class="page-header">
-        <a href="#" class="page-header__logo" title="PINK APP">
+        <a class="page-header__logo" title="PINK APP">
           <img src="./img/logo-mobile.svg" alt="Pink logo" width="74" height="23">
         </a>
         <nav class="main-nav">
@@ -58,41 +58,37 @@
           <span class="app-download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
           <ul class="app-download__list">
             <li class="app-download__list-item">
-              <a href="https://www.apple.com/ru/app-store/" title="Загрузка приложения для iOS">
-                <img src="./img/apple-logo.svg" alt="App Store">
+              <a href="https://www.apple.com/ru/app-store/" aria-label="Загрузка приложения для iOS">
               </a>
             </li>
             <li class="app-download__list-item">
-              <a href="https://play.google.com/store/apps/" title="Загрузка приложения для Android">
-                <img src="./img/android-logo.svg" alt="Android Market">
+              <a href="https://play.google.com/store/apps/" aria-label="Загрузка приложения для Android">
               </a>
             </li>
             <li class="app-download__list-item">
-              <a href="https://www.microsoft.com/ru-by/store/apps/windows" title="Загрузка приложения для Windows">
-                <img src="./img/microsoft-logo.svg" alt="Microsoft Store">
+              <a href="https://www.microsoft.com/ru-by/store/apps/windows" aria-label="Загрузка приложения для Windows">
               </a>
             </li>
           </ul>
         </section>
     </header>
     <section class="description">
-      <h2 class="visually-hidden">Описание</h2>
       <h2 class="description__offer">
         <span class="description__offer-item">Устали от серости мегаполиса?</span>
         <span class="description__offer-item">Нам есть что вам предложить!</span>
       </h2>
       <ul class="description__advantages">
         <li class="description__advantages-item">
-          <p>Поднимает настроение</p>
-          <span>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</span>
+          <h3 class="description__advantages-item-header">Поднимает настроение</h3>
+          <p class="description__advantages-item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
         <li class="description__advantages-item">
-          <p>Меняет мир вокруг</p>
-          <span>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span>
+          <h3 class="description__advantages-item-header">Меняет мир вокруг</h3>
+          <p class="description__advantages-item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
         <li class="description__advantages-item">
-          <p>Заводит новых друзей</p>
-          <span>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</span>
+          <h3 class="description__advantages-item-header">Заводит новых друзей</h3>
+          <p class="description__advantages-item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
     </section>
@@ -100,8 +96,8 @@
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__slider">
         <div class="reviews__slider-item">
-          <span>Николай Петров</span>
-          <p>«Это приложение перевернуло мой мир и позволило по-новому
+          <span class="reviews__slider-item-text">Николай Петров</span>
+          <p class="reviews__slider-item-review">«Это приложение перевернуло мой мир и позволило по-новому
             взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </div>
@@ -116,53 +112,53 @@
       <h2 class="visually-hidden">Тарифы</h2>
       <table class="tariffs__table">
         <tr>
-          <td class="visually-hidden">
-            <h3>Тариф</h3>
-          </td>
-          <td>база</td>
-          <td>стандарт</td>
-          <td>анлим</td>
+          <th class="visually-hidden">
+            <span>Тариф</span>
+          </th>
+          <th class="tariffs__table-item-heading--rounded-left">база</th>
+          <th class="tariffs__table-item-heading--hit">стандарт</th>
+          <th class="tariffs__table-item-heading--rounded-right">анлим</th>
         </tr>
         <tr>
-          <td class="visually-hidden">
-            <h3>Цена</h3>
-          </td>
-          <td>1,99 USD</td>
-          <td>3,99 USD</td>
-          <td>9,99 USD</td>
+          <th class="visually-hidden">
+            <span>Цена</span>
+          </th>
+          <th class="tariffs__table-item-prices">1,99 USD</th>
+          <th class="tariffs__table-item-prices">3,99 USD</th>
+          <th class="tariffs__table-item-prices">9,99 USD</th>
         </tr>
         <tr>
-          <td>Розовый фильтр</td>
-          <td>
+          <th>Розовый фильтр</th>
+          <td class="tariffs__table-item--positive">
             <span class="visually-hidden">да</span>
           </td>
-          <td>
+          <td class="tariffs__table-item--positive">
             <span class="visually-hidden">да</span>
           </td>
-          <td>
+          <td class="tariffs__table-item--positive">
             <span class="visually-hidden">да</span>
           </td>
         </tr>
         <tr>
-          <td>Смайлики</td>
-          <td>
+          <th>Смайлики</th>
+          <td class="tariffs__table-item--negative">
             <span class="visually-hidden">нет</span>
           </td>
-          <td>
+          <td class="tariffs__table-item--positive">
             <span class="visually-hidden">да</span>
           </td>
-          <td>
+          <td class="tariffs__table-item--positive">
             <span class="visually-hidden">да</span>
         </tr>
         <tr>
-          <td>Комментарии</td>
-          <td>
+          <th>Комментарии</th>
+          <td class="tariffs__table-item--negative">
             <span class="visually-hidden">нет</span>
           </td>
-          <td>
+          <td class="tariffs__table-item--negative">
             <span class="visually-hidden">нет</span>
           </td>
-          <td>
+          <td class="tariffs__table-item--positive">
             <span class="visually-hidden">да</span>
         </tr>
       </table>
@@ -173,14 +169,13 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Наши контакты</h2>
       <h2 class="contacts__heading">
         Остались вопросы? Свяжитесь с нами!
       </h2>
       <ul class="contacts__list">
         <li class="contacts__list-item">
           <span>Звоните:</span>
-          <a class="contacts__list-item-phone" href="tel:+78125556666" title="телефон">тел. +7 (812) 555-66-66</a>
+          <a class="contacts__list-item-phone" href="tel:+78125556666">тел. +7 (812) 555-66-66</a>
         </li>
         <li class="contacts__list-item">
           <span>Пишите:</span>
@@ -208,16 +203,16 @@
       </a>
       </div>
       <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <a href="#" class="footer__social-image--twitter" title="Twitter">
+        <li class="footer__social-link">
+          <a href="#" class="footer__social-link--twitter" title="Twitter">
           </a>
         </li>
-        <li class="footer__social-item">
-          <a href="#" class="footer__social-image--facebook" title="Facebook">
+        <li class="footer__social-link">
+          <a href="#" class="footer__social-link--facebook" title="Facebook">
           </a>
         </li>
-        <li class="footer__social-item">
-          <a href="#" class="footer__social-image--youtube" title="Youtube">
+        <li class="footer__social-link">
+          <a href="#" class="footer__social-link--youtube" title="Youtube">
           </a>
         </li>
       </ul>
