@@ -72,124 +72,126 @@
           </ul>
         </section>
     </header>
-    <section class="description">
-      <h2 class="description__offer">
-        <span class="description__offer-item">Устали от серости мегаполиса?</span>
-        <span class="description__offer-item">Нам есть что вам предложить!</span>
-      </h2>
-      <ul class="description__advantages">
-        <li class="description__advantages-item">
-          <h3 class="description__advantages-item-header">Поднимает настроение</h3>
-          <p class="description__advantages-item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="description__advantages-item">
-          <h3 class="description__advantages-item-header">Меняет мир вокруг</h3>
-          <p class="description__advantages-item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="description__advantages-item">
-          <h3 class="description__advantages-item-header">Заводит новых друзей</h3>
-          <p class="description__advantages-item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-    </section>
-    <section class="reviews">
-      <h2 class="visually-hidden">Отзывы</h2>
-      <div class="reviews__slider">
-        <div class="reviews__slider-item">
-          <span class="reviews__slider-item-text">Николай Петров</span>
-          <p class="reviews__slider-item-review">«Это приложение перевернуло мой мир и позволило по-новому
-            взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+    <main class="page-main">
+      <section class="description">
+        <h2 class="description__offer">
+          <span class="description__offer-item">Устали от серости мегаполиса?</span>
+          <span class="description__offer-item">Нам есть что вам предложить!</span>
+        </h2>
+        <ul class="description__advantages">
+          <li class="description__advantages-item">
+            <h3 class="description__advantages-item-header">Поднимает настроение</h3>
+            <p class="description__advantages-item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="description__advantages-item">
+            <h3 class="description__advantages-item-header">Меняет мир вокруг</h3>
+            <p class="description__advantages-item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="description__advantages-item">
+            <h3 class="description__advantages-item-header">Заводит новых друзей</h3>
+            <p class="description__advantages-item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__slider">
+          <div class="reviews__slider-item">
+            <span class="reviews__slider-item-text">Николай Петров</span>
+            <p class="reviews__slider-item-review">«Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </div>
+          <div class="slider-buttons">
+            <button class="slider-buttons__item" aria-label="первый слайд"></button>
+            <button class="slider-buttons__item" aria-label="второй слайд"></button>
+            <button class="slider-buttons__item" aria-label="третий слайд"></button>
+          </div>
         </div>
+      </section>
+      <section class="tariffs">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <table class="tariffs__table">
+          <tr>
+            <th>
+              <span  class="visually-hidden">Тариф</span>
+            </th>
+            <th class="tariffs__table-heading tariffs__table-heading--rounded-left">база</th>
+            <th class="tariffs__table-heading tariffs__table-heading--hit">стандарт</th>
+            <th class="tariffs__table-heading tariffs__table-heading--rounded-right">анлим</th>
+          </tr>
+          <tr>
+            <th>
+              <span class="visually-hidden">Цена</span>
+            </th>
+            <th class="tariffs__table-price">1,99 USD</th>
+            <th class="tariffs__table-price">3,99 USD</th>
+            <th class="tariffs__table-price">9,99 USD</th>
+          </tr>
+          <tr>
+            <th>Розовый фильтр</th>
+            <td class="tariffs__table-item tariffs__table-item--positive">
+              <span class="visually-hidden">да</span>
+            </td>
+            <td class="tariffs__table-item tariffs__table-item--positive">
+              <span class="visually-hidden">да</span>
+            </td>
+            <td class="tariffs__table-item tariffs__table-item--positive">
+              <span class="visually-hidden">да</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Смайлики</th>
+            <td class="tariffs__table-item tariffs__table-item--negative">
+              <span class="visually-hidden">нет</span>
+            </td>
+            <td class="tariffs__table-item tariffs__table-item--positive">
+              <span class="visually-hidden">да</span>
+            </td>
+            <td class="tariffs__table-item tariffs__table-item--positive">
+              <span class="visually-hidden">да</span>
+          </tr>
+          <tr>
+            <th>Комментарии</th>
+            <td class="tariffs__table-item tariffs__table-item--negative">
+              <span class="visually-hidden">нет</span>
+            </td>
+            <td class="tariffs__table-item tariffs__table-item--negative">
+              <span class="visually-hidden">нет</span>
+            </td>
+            <td class="tariffs__table-item tariffs__table-item--positive">
+              <span class="visually-hidden">да</span>
+          </tr>
+        </table>
         <div class="slider-buttons">
           <button class="slider-buttons__item" aria-label="первый слайд"></button>
           <button class="slider-buttons__item" aria-label="второй слайд"></button>
           <button class="slider-buttons__item" aria-label="третий слайд"></button>
         </div>
-      </div>
-    </section>
-    <section class="tariffs">
-      <h2 class="visually-hidden">Тарифы</h2>
-      <table class="tariffs__table">
-        <tr>
-          <th>
-            <span  class="visually-hidden">Тариф</span>
-          </th>
-          <th class="tariffs__table-heading tariffs__table-heading--rounded-left">база</th>
-          <th class="tariffs__table-heading tariffs__table-heading--hit">стандарт</th>
-          <th class="tariffs__table-heading tariffs__table-heading--rounded-right">анлим</th>
-        </tr>
-        <tr>
-          <th>
-            <span class="visually-hidden">Цена</span>
-          </th>
-          <th class="tariffs__table-price">1,99 USD</th>
-          <th class="tariffs__table-price">3,99 USD</th>
-          <th class="tariffs__table-price">9,99 USD</th>
-        </tr>
-        <tr>
-          <th>Розовый фильтр</th>
-          <td class="tariffs__table-item tariffs__table-item--positive">
-            <span class="visually-hidden">да</span>
-          </td>
-          <td class="tariffs__table-item tariffs__table-item--positive">
-            <span class="visually-hidden">да</span>
-          </td>
-          <td class="tariffs__table-item tariffs__table-item--positive">
-            <span class="visually-hidden">да</span>
-          </td>
-        </tr>
-        <tr>
-          <th>Смайлики</th>
-          <td class="tariffs__table-item tariffs__table-item--negative">
-            <span class="visually-hidden">нет</span>
-          </td>
-          <td class="tariffs__table-item tariffs__table-item--positive">
-            <span class="visually-hidden">да</span>
-          </td>
-          <td class="tariffs__table-item tariffs__table-item--positive">
-            <span class="visually-hidden">да</span>
-        </tr>
-        <tr>
-          <th>Комментарии</th>
-          <td class="tariffs__table-item tariffs__table-item--negative">
-            <span class="visually-hidden">нет</span>
-          </td>
-          <td class="tariffs__table-item tariffs__table-item--negative">
-            <span class="visually-hidden">нет</span>
-          </td>
-          <td class="tariffs__table-item tariffs__table-item--positive">
-            <span class="visually-hidden">да</span>
-        </tr>
-      </table>
-      <div class="slider-buttons">
-        <button class="slider-buttons__item" aria-label="первый слайд"></button>
-        <button class="slider-buttons__item" aria-label="второй слайд"></button>
-        <button class="slider-buttons__item" aria-label="третий слайд"></button>
-      </div>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__heading">
-        Остались вопросы? Свяжитесь с нами!
-      </h2>
-      <ul class="contacts__list">
-        <li class="contacts__list-item">
-          <span>Звоните:</span>
-          <a class="contacts__list-item-phone" href="tel:+78125556666">тел. +7 (812) 555-66-66</a>
-        </li>
-        <li class="contacts__list-item">
-          <span>Пишите:</span>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-        <li class="contacts__list-item">
-          <span>Приезжайте в гости:</span>
-          <address>ул. Большая Конюшенная, 19/8</address>
-        </li>
-      </ul>
-      <div class="contacts__map">
-        <img src="./img/map-static.png" alt="ул. Большая Конюшенная, 19/8">
-      </div>
-    </section>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__heading">
+          Остались вопросы? Свяжитесь с нами!
+        </h2>
+        <ul class="contacts__list">
+          <li class="contacts__list-item">
+            <span>Звоните:</span>
+            <a class="contacts__list-item-phone" href="tel:+78125556666">тел. +7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__list-item">
+            <span>Пишите:</span>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__list-item">
+            <span>Приезжайте в гости:</span>
+            <address>ул. Большая Конюшенная, 19/8</address>
+          </li>
+        </ul>
+        <div class="contacts__map">
+          <img src="./img/map-static.png" alt="ул. Большая Конюшенная, 19/8">
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__logo">
         <a href="#" title="PINK APP">
