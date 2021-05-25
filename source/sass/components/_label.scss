@@ -1,0 +1,86 @@
+.label {
+  font-size: 18px;
+  line-height: 30px;
+
+  &--caption {
+    padding-left: 22px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $pink;
+    margin-bottom: 5px;
+
+    @media #{$tablet-widths} {
+      padding-left: 0;
+      padding-top: 18px;
+      padding-right: 19px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media #{$tablet-widths} {
+    &--phone,
+    &--mail {
+      padding-top: 10px;
+      padding-left: 19px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: $bg-gray;
+        right: 2px;
+        bottom: 71px;
+        background-position: center;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        z-index: 22;
+      }
+    }
+
+    &--phone::after {
+      background-image: url("../../img/icon-phone.svg");
+    }
+
+    &--mail::after {
+      background-image: url("../../img/icon-mail.svg");
+    }
+  }
+
+  @media #{$desktop-widths} {
+    &--phone,
+    &--mail {
+      &::after {
+        bottom: 55px;
+      }
+    }
+  }
+
+  &--checkbox {
+    padding-left: 69px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    margin-bottom: 42px;
+
+    @media #{$tablet-widths} {
+      padding-left: 117px;
+    }
+
+    @media #{$desktop-widths} {
+      padding-left: 57px;
+      margin-bottom: 42px;
+    }
+  }
+
+  &--radio {
+    padding-left: 69px;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+
+    @media #{$tablet-widths} {
+      padding-left: 117px;
+      padding-bottom: 0;
+      margin-bottom: 8px;
+    }
+  }
+}

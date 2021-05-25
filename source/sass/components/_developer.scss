@@ -1,0 +1,35 @@
+.developer {
+  display: flex;
+  margin-top: 42px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $blue;
+
+  @media #{$tablet-widths} {
+    margin-top: 13px;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+.developer__link {
+  & .logo-htmlacademy {
+    fill: $pink;
+  }
+
+  &:hover .logo-htmlacademy {
+    fill: $blue;
+  }
+
+  &:active .logo-htmlacademy {
+    fill: $blue-30;
+  }
+}
+
+.developer__title {
+  margin: 5px 15px 0 0;
+}

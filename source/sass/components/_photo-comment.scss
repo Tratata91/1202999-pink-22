@@ -1,0 +1,86 @@
+.photo-comment {
+  color: $blue;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 18px;
+  font-size: 14px;
+  background-color: $bg-gray;
+
+  @media #{$tablet-widths} {
+    padding: 24px 27px 22px;
+    min-height: 110px;
+  }
+
+  &--main {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @media #{$tablet-widths} {
+      margin-left: 20px;
+      margin-right: 20px;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 15px;
+      min-height: auto;
+    }
+
+    @media #{$desktop-widths} {
+      margin-left: auto;
+      margin-right: auto;
+      align-self: center;
+      padding-bottom: 13px;
+      max-width: 940px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.photo-comment__author {
+  margin: 0;
+  font-weight: 700;
+  font-size: inherit;
+}
+
+.photo--main .photo-comment__author {
+  @media #{$tablet-widths} {
+    max-width: 45%;
+    order: 1;
+  }
+}
+
+.photo-comment__time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+.photo-comment__text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  width: 100%;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 12px;
+  }
+}
+
+.photo--main .photo-comment__text {
+  @media #{$tablet-widths} {
+    margin-bottom: 10px;
+    order: 3;
+  }
+}
+
+.photo-comment__footer {
+  margin: 0;
+  display: flex;
+
+  @media #{$tablet-widths} {
+    order: 2;
+  }
+}

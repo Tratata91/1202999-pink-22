@@ -1,0 +1,65 @@
+.form-item {
+  width: 100%;
+
+  &--info {
+    order: 1;
+    margin-bottom: 25px;
+
+    @media #{$tablet-widths} {
+      margin-bottom: 10px;
+    }
+
+    @media #{$desktop-widths} {
+      width: 435px;
+    }
+  }
+
+  &--achievements {
+    order: 2;
+    background-color: $bg-gray;
+    margin-bottom: 6px;
+
+    @media #{$tablet-widths} {
+      order: 4;
+      background-color: transparent;
+      margin-top: 15px;
+      margin-bottom: 65px;
+    }
+  }
+
+  &--contacts {
+    order: 3;
+    margin-top: 26px;
+    margin-bottom: 24px;
+
+    @media #{$tablet-widths} {
+      background-color: transparent;
+      margin-top: 65px;
+      margin-bottom: 48px;
+    }
+
+    @media #{$desktop-widths} {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  &--app {
+    order: 4;
+    background-color: $bg-gray;
+
+    @media #{$tablet-widths} {
+      order: 2;
+      background-color: transparent;
+    }
+
+    @media #{$desktop-widths} {
+      width: 435px;
+      margin-top: 6px;
+    }
+  }
+
+  &--description {
+    order: 5;
+  }
+}

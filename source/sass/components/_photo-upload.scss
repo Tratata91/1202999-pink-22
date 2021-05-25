@@ -1,0 +1,25 @@
+.photo-load__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-load__title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: $blue;
+  line-height: 30px;
+  margin-top: 44px;
+  margin-bottom: 43px;
+
+  @media #{$tablet-widths} {
+    font-size: 18px;
+    margin-top: 64px;
+    margin-bottom: 70px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-top: 58px;
+    margin-bottom: 66px;
+  }
+}

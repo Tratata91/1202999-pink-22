@@ -1,0 +1,62 @@
+.contest__form input,
+.contest__form textarea {
+  &:required:valid,
+  &:required:focus:valid {
+    border-color: green;
+  }
+
+  &:required:invalid:not(:placeholder-shown),
+  &:required:focus:invalid:not(:placeholder-shown) {
+    border-color: red;
+  }
+
+  &:required:invalid {
+    box-shadow: none;
+  }
+
+  &:required:invalid:focus + .fieldset-error {
+    display: block;
+  }
+}
+
+.fieldset-error {
+  color: $pink;
+  text-align: left;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 14px;
+  right: 0;
+  top: 107px;
+  display: none;
+
+  &--textarea {
+    top: 210px;
+    right: 20px;
+  }
+
+  @media #{$tablet-widths} {
+    top: 80px;
+
+    &--textarea {
+      top: 250px;
+      right: 57px;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    &--textarea {
+      top: 175px;
+    }
+  }
+}
+
+.validation-error input:required:invalid,
+.validation-error textarea:required:invalid {
+  border-color: red;
+}
+
+
+.validation-error input:required:invalid + .fieldset-error,
+.validation-error textarea:required:invalid + .fieldset-error {
+  display: block;
+}

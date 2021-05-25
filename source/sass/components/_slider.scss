@@ -1,0 +1,163 @@
+.slider {
+  position: relative;
+}
+
+.slider__input {
+  display: none;
+}
+
+.slider__inner {
+  overflow: hidden;
+}
+
+.slider__slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.8s ease;
+
+  &--table {
+    display: table;
+
+    @media #{$tablet-widths} {
+      width: 100%;
+    }
+  }
+}
+
+.slider__slide {
+  width: 100%;
+}
+
+.slider__controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media #{$desktop-widths} {
+    position: absolute;
+    justify-content: space-between;
+    top: 56%;
+    height: 50px;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  &--table {
+    @media #{$tablet-widths} {
+      display: none;
+    }
+  }
+}
+
+.slider__control {
+  width: 6px;
+  height: 6px;
+  margin: 0 9px;
+  background-color: $blue-30;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-60;
+  }
+
+  &:active {
+    background-color: $blue-10;
+  }
+
+  @media #{$desktop-widths} {
+    display: none;
+    background-color: transparent;
+    margin: 0;
+    width: 25px;
+    height: 45px;
+    border-radius: 0;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+}
+
+input[value="slide-btn1"]:checked ~ .slider__controls label[for="slide-btn1"],
+input[value="slide-btn2"]:checked ~ .slider__controls label[for="slide-btn2"],
+input[value="slide-btn3"]:checked ~ .slider__controls label[for="slide-btn3"],
+input[value="table-slide-btn1"]:checked ~ .slider__controls label[for="table-slide-btn1"],
+input[value="table-slide-btn2"]:checked ~ .slider__controls label[for="table-slide-btn2"],
+input[value="table-slide-btn3"]:checked ~ .slider__controls label[for="table-slide-btn3"] {
+  box-shadow: 0 0 0 3px $blue;
+  background-color: $white;
+}
+
+
+input[value="slide-btn1"]:checked ~ .slider__inner .slider__slides,
+input[value="table-slide-btn1"]:checked ~ .slider__inner .slider__slides {
+  transform: translate(0);
+}
+
+input[value="slide-btn2"]:checked ~ .slider__inner .slider__slides,
+input[value="table-slide-btn2"]:checked ~ .slider__inner .slider__slides {
+  transform: translate(-33.3333333%);
+
+  &--table {
+    @media #{$tablet-widths} {
+      transform: translate(0);
+    }
+  }
+}
+
+input[value="slide-btn3"]:checked ~ .slider__inner .slider__slides,
+input[value="table-slide-btn3"]:checked ~ .slider__inner .slider__slides {
+  transform: translate(-66.6666666%);
+
+  &--table {
+    @media #{$tablet-widths} {
+      transform: translate(0);
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  input[value="slide-btn1"]:checked ~ .slider__controls label[for="slide-btn3"],
+  input[value="slide-btn2"]:checked ~ .slider__controls label[for="slide-btn1"],
+  input[value="slide-btn3"]:checked ~ .slider__controls label[for="slide-btn2"] {
+
+    order: 1;
+    display: block;
+    background-image: url("../../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url("../../img/icon-review-arrow-left-hvr.svg");
+    }
+
+    &:active {
+      background-image: url("../../img/icon-review-arrow-left-down.svg");
+    }
+  }
+
+  input[value="slide-btn1"]:checked ~ .slider__controls label[for="slide-btn2"],
+  input[value="slide-btn2"]:checked ~ .slider__controls label[for="slide-btn3"],
+  input[value="slide-btn3"]:checked ~ .slider__controls label[for="slide-btn1"] {
+
+    order: 2;
+    display: block;
+    background-image: url("../../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url("../../img/icon-review-arrow-right-hvr.svg");
+      transition: 0s;
+    }
+
+    &:active {
+      background-image: url("../../img/icon-review-arrow-right-down.svg");
+      transition: 0s;
+    }
+  }
+}

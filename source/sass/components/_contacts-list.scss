@@ -1,0 +1,19 @@
+.contacts-list {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 43px;
+  }
+
+  @media #{$desktop-widths} {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 57px;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,68 @@
+.page-body {
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $black;
+  font-style: normal;
+  background-color: $white;
+}
+
+.img-global {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  background-color: $bg-gray;
+}
+
+.picture-global {
+  display: block;
+}
+
+.a-global {
+  outline: 0;
+}
+
+.global-ul {
+  padding: 0;
+}
+
+.global-li {
+  list-style-type: none;
+}
+
+.label-global {
+  user-select: none;
+}
+
+.input-global {
+  outline: none;
+}
+
+:hover,
+:hover::before,
+:hover::after {
+  transition: 0.3s ease all;
+}
+
+.mobile-hidden {
+  display: none;
+
+  @media #{$tablet-widths} {
+    display: inline;
+  }
+}
+
+.tablet-hidden {
+  @media #{$tablet-widths-only} {
+    display: none;
+  }
+}
+
+.pink-text {
+  color: $pink;
+}

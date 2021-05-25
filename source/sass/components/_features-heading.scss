@@ -1,0 +1,20 @@
+.features-heading {
+  color: $blue;
+  display: block;
+  margin: 0 0 25px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+
+  @media #{$tablet-widths} {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}

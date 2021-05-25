@@ -1,0 +1,43 @@
+.tariff {
+  display: block;
+  position: relative;
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: 700;
+
+  &--popular::after {
+    content: "Хит";
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+    top: -6px;
+    left: -38px;
+    transform: rotate(-45deg);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $pink;
+    color: $white;
+  }
+
+  @media #{$tablet-widths} {
+    margin-bottom: 3px;
+    font-size: 16px;
+
+    &--popular::after {
+      top: -8px;
+      left: -41px;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    margin-bottom: 3px;
+    font-size: 18px;
+
+    &--popular::after {
+      top: -6px;
+      left: -39px;
+    }
+  }
+}

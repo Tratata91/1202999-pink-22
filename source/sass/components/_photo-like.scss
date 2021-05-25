@@ -1,0 +1,22 @@
+.photo-like {
+  text-decoration: none;
+  margin-right: 19px;
+
+  @media #{$tablet-widths} {
+    order: 2;
+    margin-right: 4px;
+    margin-left: 0;
+  }
+}
+
+.photo-like__icon {
+  fill: $pink;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: $blue-30;
+  }
+}

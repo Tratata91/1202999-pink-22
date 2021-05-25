@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Pink</title>
+  <link rel="stylesheet" href="build/css/normalize.css">
+  <link rel="stylesheet" href="build/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body class="page-body">
+  <header class="page-header  page-header--nojs">
+    <div class="page-header__wrapper">
+      <div class="page-logo  page-logo--open">
+        <a class="page-logo__link  page-logo__link--headerlogo a-global" href="index.html" title="Вернуться на главную">
+          <svg class="header-logo  header-logo--mobile" width="74" height="23">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="header-logo  header-logo--tablet" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="header-logo  header-logo--desktop" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
+        </a>
+        <button type="button" class="toggle">
+          <span class="toggle__icon  toggle__icon--burger">
+          </span>
+        </button>
+      </div>
+      <nav class="main-nav  main-nav--shown">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link a-global">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html" class="main-nav__link a-global">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active active a-global">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru"  class="main-nav__link a-global">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="page-info  page-info--form">
+      <div class="page-info__wrapper page-info__wrapper--form">
+        <div class="page-title  page-title--form">
+          <h1 class="page-title__heading  page-title__heading--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </div>
+    </section>
+    <section class="contest">
+      <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="contest-title">
+          <p class="contest-title__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="mobile-hidden">Пожалуйста, заполните форму ниже:</span>
+          </p>
+        </div>
+        <div class="form-item  form-item--info">
+          <fieldset class="fieldset  fieldset--info">
+            <ul class="fieldset-list">
+              <li class="fieldset-list__item">
+                <label class="label  label--caption label-global" for="surname">Фамилия:</label>
+                <input class="input-global" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" title="Необходимо использовать только русские буквы" pattern="^[А-Яа-яЁё]+$" required>
+                <span class="fieldset-error">Только русские буквы</span>
+              </li>
+              <li class="fieldset-list__item">
+                <label class="label  label--caption label-global" for="name">Имя:</label>
+                <input class="input-global" type="text" name="name" id="name" placeholder="Введите ваше имя *" title="Необходимо использовать только русские буквы" pattern="^[А-Яа-яЁё]+$" required>
+                <span class="fieldset-error">Только русские буквы</span>
+              </li>
+              <li class="fieldset-list__item">
+                <label class="label  label--caption label-global" for="middle-name">Отчество:</label>
+                <input class="input-global" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже" title="Необходимо использовать только русские буквы" pattern="^[А-Яа-яЁё]+$">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-item  form-item--app">
+          <fieldset class="fieldset  fieldset--app">
+            <legend class="fieldset__title"><span class="fieldset__heading">С каким приложением путешествовали?</span></legend>
+            <ul class="fieldset-list">
+              <li class="fieldset-list__item">
+                <input class="input-global" type="radio" name="trip-app" value="ios" id="ios" checked>
+                <label class="label  label--radio label-global" for="ios">Pink для iOS</label>
+              </li>
+              <li class="fieldset-list__item">
+                <input class="input-global" type="radio" name="trip-app" value="android" id="android">
+                <label class="label  label--radio label-global" for="android">Pink на Android</label>
+              </li>
+              <li class="fieldset-list__item">
+                <input class="input-global" type="radio" name="trip-app" value="windows-phone" id="windows-phone">
+                <label class="label  label--radio label-global" for="windows-phone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-item  form-item--contacts">
+          <fieldset class="fieldset  fieldset--contacts">
+            <legend class="fieldset__title"><span class="fieldset__heading">Контактная информация</span></legend>
+            <ul class="fieldset-list">
+              <li class="fieldset-list__item">
+                <label class="label  label--caption  label--phone label-global" for="phone-number">Номер телефона</label>
+                <input class="input-global" type="tel" name="phone" id="phone-number" minlength="16" maxlength="16" placeholder="Номер, пожалуйста" title="Ведите Ваш номер телефона">
+              </li>
+              <li class="fieldset-list__item">
+                <label class="label  label--caption  label--mail label-global" for="mail">Адрес почты</label>
+                <input class="input-global" type="email" name="mail" id="mail" placeholder="Введите почту *" title="E-mail должен быть в формате your-mail@domain" required>
+                <span class="fieldset-error">your-mail@domain</span>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-item  form-item--achievements">
+          <fieldset class="fieldset  fieldset--achievements">
+            <legend class="fieldset__title">
+              <span class="fieldset__heading">Ваши безбашенные достижения в путешествии</span>
+            </legend>
+            <ul class="fieldset-list">
+              <li class="fieldset-list__item  fieldset-list__item--selfie">
+                <input class="input-global" type="checkbox" name="selfie" id="selfie" checked>
+                <label class="label  label--checkbox label-global" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="fieldset-list__item  fieldset-list__item--beach">
+                <input class="input-global" type="checkbox" name="beach" id="beach" checked>
+                <label class="label  label--checkbox label-global" for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="fieldset-list__item  fieldset-list__item--norris">
+                <input class="input-global" type="checkbox" name="norris" id="norris">
+                <label class="label  label--checkbox label-global" for="norris">Видел Чака Норриса</label>
+              </li>
+              <li class="fieldset-list__item  fieldset-list__item--souvenir">
+                <input class="input-global" type="checkbox" name="souvenir" id="souvenir">
+                <label class="label  label--checkbox label-global" for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="fieldset-list__item  fieldset-list__item--tower">
+                <input class="input-global" type="checkbox" name="tower" id="tower" checked>
+                <label class="label  label--checkbox label-global" for="tower">Удержал башню</label>
+              </li>
+              <li class="fieldset-list__item  fieldset-list__item--hotel">
+                <input class="input-global" type="checkbox" name="hotel" id="hotel">
+                <label class="label  label--checkbox label-global" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-item  form-item--description">
+          <fieldset class="fieldset  fieldset--description">
+            <legend class="fieldset__title">
+              <span class="fieldset__heading">Опишите свои эмоции</span>
+            </legend>
+            <textarea class="description-text" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях" id="emotion" title="Добавьте Ваш отзыв"></textarea>
+          </fieldset>
+        </div>
+        <div class="submit">
+          <input class="submit__btn input-global" type="submit" id="submit" name="submit" value="Отправить форму">
+          <p class="submit__text"><span class="pink-text">*&nbsp;</span>—&nbsp;обязательные&nbsp;<span class="mobile-hidden  tablet-hidden">для заполнения&nbsp;</span>поля</p>
+        </div>
+      </form>
+    </section>
+    <section class="popup  popup--error">
+      <div class="popup__top">
+        <h3 class="popup__title">Что-то пошло не так!</h3>
+        <p class="popup__text  popup__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="popup__buttonarea">
+        <button class="popup__button  popup__button--error" type="button" name="popup__button">ok</button>
+      </div>
+    </section>
+    <section class="popup  popup--success">
+      <div class="popup__top">
+        <h3 class="popup__title">Ваша заявка отправлена</h3>
+        <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+      <div class="popup__buttonarea  popup__buttonarea--gray">
+        <button class="popup__button" type="button" name="popup__button">закрыть окно</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo a-global" href="index.html" title="Вернуться на главную">
+        <svg class="footer-logo  footer-logo--mobile" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-blue-mobile"></use>
+        </svg>
+        <svg class="footer-logo  footer-logo--desktop" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-blue-desktop"></use>
+        </svg>
+      </a>
+      <div class="social-buttons">
+        <a class="social-buttons__item  social-buttons__item--twitter a-global" href="#" target="_blank"  title="Страница в Twitter"></a>
+        <a class="social-buttons__item  social-buttons__item--fb a-global" href="#" target="_blank"  title="Страница в Facebook"></a>
+        <a class="social-buttons__item  social-buttons__item--youtube a-global" href="#" target="_blank"  title="Канал на Youtube"></a>
+      </div>
+      <div class="developer">
+        <p class="developer__title">Разработано</p>
+        <a class="developer__link a-global" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Интерактивные онлайн-курсы HTML Academy">
+          <svg class="logo-htmlacademy" width="26.943" height="34.09">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main-menu.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

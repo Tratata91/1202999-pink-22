@@ -1,0 +1,126 @@
+.price-table {
+  border-collapse: collapse;
+  border-spacing: 2px;
+  padding: inherit;
+}
+
+.price-table__row .price-table__cell:first-of-type {
+  @media #{$tablet-widths} {
+    border-left-width: 4px;
+  }
+}
+
+.price-table__row .price-table__cell:last-of-type {
+  @media #{$tablet-widths} {
+    border-right-width: 4px;
+  }
+}
+
+.price-table__title,
+.price-table__cell {
+  box-sizing: border-box;
+  min-width: 279px;
+  line-height: 30px;
+  border: 2px solid $table-border;
+  border-radius: 2px;
+  text-transform: uppercase;
+
+  @media #{$tablet-widths} {
+    min-width: 155px;
+  }
+
+  @media #{$desktop-widths} {
+    min-width: 234px;
+  }
+}
+
+.price-table__title {
+  padding: 16px 13px 20px 13px;
+  color: $white;
+  background-color: $blue;
+  border-top: none;
+  overflow: hidden;
+  border-left: none;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media #{$tablet-widths} {
+      display: table-cell;
+      background-color: transparent;
+      border: transparent;
+    }
+  }
+
+  @media #{$tablet-widths} {
+    padding: 12px 11px 14px 11px;
+  }
+
+  @media #{$desktop-widths} {
+    padding: 16px 11px 18px 14px;
+  }
+}
+
+.price-table__cell {
+  padding: 14px 13px 14px 23px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: $white;
+  color: $blue;
+
+  @media #{$tablet-widths} {
+    padding: 7px 15px 8px 15px;
+    text-transform: none;
+  }
+
+  @media #{$desktop-widths} {
+    padding: 14px 21px 15px 21px;
+    font-size: 18px;
+  }
+
+  &--blank {
+    background-color: transparent;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media #{$tablet-widths} {
+      display: table-cell;
+    }
+  }
+
+  &--avaliable,
+  &--unavaliable {
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 93% 50%;
+
+    @media #{$tablet-widths} {
+      background-position: 50% 50%;
+      background-size: 28px;
+    }
+
+    @media #{$desktop-widths} {
+      background-position: 50% 50%;
+      background-size: 28px;
+    }
+  }
+
+  &--avaliable {
+    background-image: url("../../img/icon-yes.svg");
+
+    @media #{$desktop-widths} {
+      background-position: 50% 60%;
+      background-size: 31px;
+    }
+  }
+
+  &--unavaliable {
+    background-image: url("../../img/icon-no.svg");
+  }
+}

@@ -1,0 +1,15 @@
+.features-title__wrapper {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+  @media #{$tablet-widths} {
+    padding-top: 50px;
+    padding-bottom: 44px;
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+}

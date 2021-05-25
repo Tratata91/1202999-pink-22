@@ -1,0 +1,40 @@
+.page-header {
+  width: 100%;
+  min-width: 320px;
+  position: absolute;
+  top: 0;
+  color: $white;
+  margin: 0;
+  padding: 0;
+
+  @media #{$desktop-widths} {
+    background-color: $black-30;
+  }
+
+  &--nojs {
+    position: relative;
+
+    @media #{$desktop-widths} {
+      position: absolute;
+    }
+  }
+}
+
+.page-header--nojs .toggle {
+  display: none;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: none;
+
+  @media #{$desktop-widths} {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 940px;
+  }
+}

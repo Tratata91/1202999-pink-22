@@ -1,0 +1,10 @@
+.like-text, {
+  font-size: 12px;
+  color: $pink;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  @media #{$tablet-widths} {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,116 @@
+.upload-form {
+  background-color: $bg-gray;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 56px;
+    padding-bottom: 54px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 940px;
+    padding-left: 80px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 27px;
+    padding-bottom: 55px;
+  }
+}
+
+.upload-form img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.upload-form__image {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media #{$tablet-widths} {
+    margin-left: 0;
+    margin-right: 0;
+    width: 300px;
+  }
+}
+
+.upload-form__tools {
+  @media #{$tablet-widths} {
+    margin-left: 45px;
+    flex-grow: 1;
+  }
+
+  @media #{$desktop-widths} {
+    margin-left: 90px;
+  }
+}
+
+.upload-form__submit-photo,
+.upload-form__reset-photo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 38px;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+
+  @media #{$tablet-widths} {
+    margin-left: 2px;
+    margin-right: 14px;
+    margin-top: 66px;
+    margin-bottom: 0;
+    max-width: 260px;
+    align-items: center;
+  }
+
+  @media #{$desktop-widths} {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 120px;
+    max-width: 183px;
+  }
+}
+
+.upload-form__reset-photo {
+  @media #{$tablet-widths-only} {
+    margin-top: 0;
+  }
+}
+
+.upload-form__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  margin-bottom: 38px;
+
+  @media #{$mobile-widths-only} {
+    margin-top: 38px;
+  }
+
+  @media #{$tablet-widths-only} {
+    margin-left: 2px;
+    margin-right: 14px;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

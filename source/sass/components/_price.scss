@@ -1,0 +1,15 @@
+.price {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+
+  @media #{$tablet-widths} {
+    font-size: 18px;
+    line-height: 19px;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

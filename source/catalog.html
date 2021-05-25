@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Pink</title>
+  <link rel="stylesheet" href="build/css/normalize.css">
+  <link rel="stylesheet" href="build/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script type="text/javascript" src="js/picturefill.min.js" async=""></script>
+</head>
+<body class="page-body">
+<div class="wrapper">
+  <header class="page-header  page-header--nojs">
+    <div class="page-header__wrapper">
+      <div class="page-logo  page-logo--open">
+        <a class="page-logo__link  page-logo__link--headerlogo a-global" href="index.html" title="Вернуться на главную">
+          <svg class="header-logo  header-logo--mobile" width="74" height="23">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="header-logo  header-logo--tablet" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="header-logo  header-logo--desktop" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
+        </a>
+        <button type="button" class="toggle">
+          <span class="toggle__icon  toggle__icon--burger">
+          </span>
+        </button>
+      </div>
+      <nav class="main-nav  main-nav--shown">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link a-global">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active active a-global">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link a-global">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru"  class="main-nav__link a-global">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="page-info  page-info--photo">
+      <div class="page-info__wrapper  page-info__wrapper--photo">
+        <div class="page-title  page-title--photo">
+          <h1 class="page-title__heading  page-title__heading--photo">Фотографии пользователей</h1>
+        </div>
+      </div>
+    </section>
+    <section class="photo-block">
+      <div class="photo-block__wrapper">
+        <div class="photo-title">
+          <p class="photo-title__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+        <article class="photo  photo--main">
+          <a class="photo__link a-global" href="img/content/panorama-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+            <picture class="photo__image picture-global">
+              <source media="(min-width: 960px)" srcset="img/content/panorama-desktop@1x.jpg 1x, img/content/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/content/panorama-tablet@1x.jpg 1x, img/content/panorama-tablet@2x.jpg 2x">
+              <img class="img-global" src="img/content/panorama-mobile@1x.jpg" srcset="img/content/panorama-mobile@2x.jpg 2x" alt="picture">
+            </picture>
+          </a>
+          <div class="photo-comment  photo-comment--main">
+            <h5 class="photo-comment__author">Анна<span class="photo-comment__time"> (5 минут назад)</span></h5>
+            <p class="photo-comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+            <p class="photo-comment__footer">
+              <a href="#" class="photo-like a-global" title="Лайк!">
+                <svg class="photo-like__icon" width="12.545" height="11.99">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-heart"></use>
+                </svg>
+              </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">215</span>
+                </span>
+            </p>
+          </div>
+        </article>
+        <div class="photo-block__inner">
+          <article class="photo">
+            <a class="photo__link a-global" href="img/content/photo-car-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image  photo__image--main picture-global">
+                <source media="(min-width: 960px)" srcset="img/content/photo-car-desktop@1x.jpg 1x, img/content/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-car-tablet@1x.jpg 1x, img/content/photo-car-tablet@2x.jpg 2x">
+                <img class="img-global" src="img/content/photo-car-mobile@1x.jpg" srcset="img/content/photo-car-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Левон<span class="photo-comment__time"> (5 часов назад)</span></h5>
+              <p class="photo-comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like a-global" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">356</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link a-global" href="img/content/photo-drumset-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image picture-global">
+                <source media="(min-width: 960px)" srcset="img/content/photo-drumset-desktop@1x.jpg 1x, img/content/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-drumset-tablet@1x.jpg 1x, img/content/photo-drumset-tablet@2x.jpg 2x">
+                <img class="img-global" src="img/content/photo-drumset-mobile@1x.jpg" srcset="img/content/photo-drumset-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Антон<span class="photo-comment__time"> (12 часов назад)</span></h5>
+              <p class="photo-comment__text">Соседи будут рады!</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like a-global" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">666</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link a-global" href="img/content/photo-window-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image picture-global">
+                <source media="(min-width: 960px)" srcset="img/content/photo-window-desktop@1x.jpg 1x, img/content/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-window-tablet@1x.jpg 1x, img/content/photo-window-tablet@2x.jpg 2x">
+                <img class="img-global" src="img/content/photo-window-mobile@1x.jpg" srcset="img/content/photo-window-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Борис<span class="photo-comment__time"> (20 часов назад)</span></h5>
+              <p class="photo-comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like a-global" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">215</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link a-global" href="img/content/photo-fair-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image picture-global">
+                <source media="(min-width: 960px)" srcset="img/content/photo-fair-desktop@1x.jpg 1x, img/content/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-fair-tablet@1x.jpg 1x, img/content/photo-fair-tablet@2x.jpg 2x">
+                <img class="img-global" src="img/content/photo-fair-mobile@1x.jpg" srcset="img/content/photo-fair-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Сергей<span class="photo-comment__time"> (25 часов назад)</span></h5>
+              <p class="photo-comment__text">Самая кубанская в мире!</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like a-global" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">4</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link a-global" href="img/content/photo-pov-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image picture-global">
+                <source media="(min-width: 960px)" srcset="img/content/photo-pov-desktop@1x.jpg 1x, img/content/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-pov-tablet@1x.jpg 1x, img/content/photo-pov-tablet@2x.jpg 2x">
+                <img class="img-global" src="img/content/photo-pov-mobile@1x.jpg" srcset="img/content/photo-pov-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Максим<span class="photo-comment__time"> (40 часов назад)</span></h5>
+              <p class="photo-comment__text">Где снег-то?</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like a-global" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">150</span>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="photo">
+            <a class="photo__link a-global" href="img/content/photo-wing-desktop@2x.jpg" target="blank" title="Открыть фотографию в полном размере">
+              <picture class="photo__image picture-global">
+                <source media="(min-width: 960px)" srcset="img/content/photo-wing-desktop@1x.jpg 1x, img/content/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/content/photo-wing-tablet@1x.jpg 1x, img/content/photo-wing-tablet@2x.jpg 2x">
+                <img class="img-global" src="img/content/photo-wing-mobile@1x.jpg" srcset="img/content/photo-wing-mobile@2x.jpg 2x" alt="picture">
+              </picture>
+            </a>
+            <div class="photo-comment">
+              <h5 class="photo-comment__author">Надежда<span class="photo-comment__time"> (45 часов назад)</span></h5>
+              <p class="photo-comment__text">Всем GM и взаимные лайки!</p>
+              <p class="photo-comment__footer">
+                <a href="#" class="photo-like a-global" title="Лайк!">
+                  <svg class="photo-like__icon" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-heart"></use>
+                  </svg>
+                </a>
+                <span class="like-text">Нравится:
+                  <span class="like-counter">2560</span>
+                </span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="photo-load">
+      <div class="photo-load__wrapper">
+        <p class="photo-load__title">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <form class="upload-form" action="https://echo.htmlacademy.ru" method="post">
+          <picture class="upload-form__image picture-global">
+            <source media="(min-width: 960px)" srcset="img/content/photo-road-desktop@1x.jpg 1x, img/content/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/content/photo-road-tablet@1x.jpg 1x, img/content/photo-road-tablet@2x.jpg 2x">
+            <img class="img-global" src="img/content/photo-road-mobile@1x.jpg" srcset="img/content/photo-road-mobile@2x.jpg 2x" alt="picture">
+          </picture>
+          <div class="upload-form__tools">
+            <ul class="range-controls global-ul">
+              <li class="range-controls__wrap  range-controls__wrap--crop global-li">
+                <label class="range-controls__filter-toggle  range-controls__filter-toggle--crop label-global" for="range-filter-crop">
+                  <svg class="range-controls__svg" width="44" height="44">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-editor-crop"></use>
+                  </svg>
+                </label>
+                <input class="input-global range range-controls__visible-mobile" type="range" value="filter-crop" id="range-filter-crop" name="range-filter" checked>
+              </li>
+              <li class="range-controls__wrap  range-controls__wrap--fill global-li">
+                <label class="range-controls__filter-toggle  range-controls__filter-toggle--fill label-global" for="range-filter-fill">
+                  <svg class="range-controls__svg" width="48" height="43">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-editor-fill"></use>
+                  </svg>
+                </label>
+                <input class="input-global range range-controls__input" type="range" value="filter-fill" id="range-filter-fill" name="range-filter">
+              </li>
+              <li class="range-controls__wrap  range-controls__wrap--contrast global-li">
+                <label class="range-controls__filter-toggle  range-controls__filter-toggle--contrast label-global" for="range-filter-contrast">
+                  <svg class="range-controls__svg range-controls__svg--contrast" width="32" height="32">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#icon-editor-contrast"></use>
+                  </svg>
+                </label>
+                <input class="input-global range range-controls__input" type="range" value="filter-contrast" id="range-filter-contrast" name="range-filter">
+              </li>
+            </ul>
+            <div class="upload-form__buttons">
+              <input class="button  upload-form__submit-photo  button--active input-global" id="submit-btn" type="submit" value="Запостить">
+              <input class="button  upload-form__reset-photo  button--disabled input-global" id="reset-btn" type="reset" value="Отмена">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper  page-footer__wrapper--photo">
+      <a class="page-footer__logo a-global" href="index.html" title="Вернуться на главную">
+        <svg class="footer-logo  footer-logo--mobile" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-blue-mobile"></use>
+        </svg>
+        <svg class="footer-logo  footer-logo--desktop" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-pink-blue-desktop"></use>
+        </svg>
+      </a>
+      <div class="social-buttons">
+        <a class="social-buttons__item  social-buttons__item--twitter a-global" href="#" target="_blank"  title="Страница в Twitter"></a>
+        <a class="social-buttons__item  social-buttons__item--fb a-global" href="#" target="_blank"  title="Страница в Facebook"></a>
+        <a class="social-buttons__item  social-buttons__item--youtube a-global" href="#" target="_blank"  title="Канал на Youtube"></a>
+      </div>
+      <div class="developer">
+        <p class="developer__title">Разработано</p>
+        <a class="developer__link a-global" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Интерактивные онлайн-курсы HTML Academy">
+          <svg class="logo-htmlacademy" width="26.943" height="34.09">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+  <script src="js/main-menu.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+</body>
+</html>

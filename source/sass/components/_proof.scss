@@ -1,0 +1,118 @@
+.proof {
+  display: none;
+
+  @media #{$tablet-widths} {
+    display: block;
+  }
+
+  @media #{$desktop-widths} {
+    background-color: $bg-gray;
+  }
+}
+
+.proof__wrapper {
+  @include container;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../img/icon-timer.svg");
+  background-position: 22px 61px;
+  background-size: 236px;
+  background-repeat: no-repeat;
+  min-height: 338px;
+
+  @media #{$desktop-widths} {
+    background-position: 12px 27px;
+    background-size: 297px;
+    padding-bottom: 100px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "24";
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    padding: 12px;
+    left: 38px;
+    top: 114px;
+    border: 15px solid $pink;
+    border-radius: 50%;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 138.47px;
+    color: $pink;
+
+    @media #{$desktop-widths} {
+      width: 195px;
+      height: 195px;
+      left: 36px;
+      top: 97px;
+      font-size: 120px;
+      line-height: 181.47px;
+    }
+  }
+}
+
+.proof__content {
+  padding-left: 310px;
+  padding-top: 96px;
+
+  @media #{$desktop-widths} {
+    padding-left: 366px;
+    padding-top: 117px;
+  }
+}
+
+.proof__title {
+  margin: 0 140px 10px 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+
+  @media #{$desktop-widths} {
+    margin-right: 0;
+    margin-bottom: 21px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.proof__text {
+  margin: 0 10px 10px 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $blue;
+  text-align: left;
+
+  @media #{$desktop-widths} {
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 53px;
+    margin-bottom: 31px;
+  }
+}
+
+.proof__link {
+  display: block;
+  color: $pink;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media #{$desktop-widths} {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $blue-30;
+  }
+}

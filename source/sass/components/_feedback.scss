@@ -1,0 +1,32 @@
+.feedback__wrapper {
+  @include container;
+  position: relative;
+  padding-top: 44px;
+  padding-bottom: 15px;
+
+  @media #{$tablet-widths} {
+    padding-top: 47px;
+    padding-bottom: 29px;
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 67px;
+    padding-bottom: 24px;
+  }
+}
+
+.feedback__title {
+  text-align: center;
+  margin: 0 0 2px 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: $blue;
+
+  @media #{$tablet-widths} {
+    font-size: 40px;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 50px;
+  }
+}

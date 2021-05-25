@@ -1,0 +1,27 @@
+.reviews__wrapper {
+  @include container;
+  max-width: none;
+  padding-bottom: 46px;
+  padding-top: 43px;
+
+  @media #{$tablet-widths} {
+    padding-bottom: 22px;
+    padding-top: 96px;
+  }
+
+  @media #{$desktop-widths} {
+    padding-bottom: 0;
+    padding-top: 185px;
+    background-image: url("../../img/icon-quotes.svg");
+    background-position: center 71px;
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__list {
+  margin-bottom: 35px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 37px;
+  }
+}

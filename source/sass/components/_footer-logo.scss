@@ -1,0 +1,20 @@
+.footer-logo {
+  &--desktop {
+    display: none;
+
+    @media #{$desktop-widths} {
+      display: block;
+      cursor: pointer;
+    }
+
+    @media #{$tablet-widths-only} {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    @media #{$desktop-widths} {
+      display: none;
+    }
+  }
+}

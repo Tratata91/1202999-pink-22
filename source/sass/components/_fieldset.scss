@@ -1,0 +1,246 @@
+.fieldset {
+  @include container;
+  border: none;
+  position: relative;
+
+  @media #{$tablet-widths} {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  @media #{$desktop-widths} {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  &--info {
+    @media #{$desktop-widths} {
+      padding-right: 35px;
+      padding-top: 12px;
+    }
+  }
+
+  &--app {
+    @media #{$tablet-widths} {
+      border: solid 2px $table-border;
+      border-radius: 2px;
+      box-sizing: border-box;
+    }
+
+    @media #{$desktop-widths} {
+      padding-left: 16px;
+      padding-bottom: 15px;
+      margin-bottom: 65px;
+    }
+  }
+
+  &--contacts {
+    @media #{$tablet-widths} {
+      border: solid 2px $table-border;
+      border-radius: 2px;
+      box-sizing: border-box;
+    }
+  }
+
+  &--achievements {
+    @media #{$tablet-widths} {
+      border: solid 2px $table-border;
+      border-radius: 2px;
+      box-sizing: border-box;
+      padding-bottom: 5px;
+    }
+  }
+
+  &--description {
+    @media #{$tablet-widths} {
+      border: solid 2px $table-border;
+      border-radius: 2px;
+      box-sizing: border-box;
+      padding-bottom: 48px;
+      padding-left: 57px;
+      padding-right: 57px;
+      padding-top: 43px;
+    }
+
+    @media #{$desktop-widths} {
+      padding-bottom: 41px;
+      padding-left: 57px;
+      padding-right: 57px;
+      padding-top: 42px;
+    }
+  }
+}
+
+.fieldset--app .fieldset-list {
+  @media #{$tablet-widths} {
+    margin-top: 57px;
+    margin-bottom: 18px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-top: 59px;
+    margin-bottom: 0;
+  }
+}
+
+.fieldset--app .fieldset__title {
+  padding-top: 40px;
+  padding-bottom: 38px;
+
+  @media #{$tablet-widths} {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.fieldset--contacts .fieldset__title {
+  display: none;
+
+  @media #{$tablet-widths} {
+    display: block;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.fieldset--contacts .fieldset-list {
+  @media #{$tablet-widths} {
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 45px;
+  }
+
+  @media #{$desktop-widths} {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 44px;
+  }
+}
+
+.fieldset--contacts .fieldset-list__item {
+  @media #{$tablet-widths} {
+    flex-direction: column-reverse;
+    padding-bottom: 29px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 46%;
+    padding-bottom: 13px;
+  }
+}
+
+.fieldset--description .fieldset__title {
+  padding-top: 42px;
+  padding-bottom: 15px;
+
+  @media #{$tablet-widths} {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.fieldset--achievements .fieldset-list {
+  @media #{$tablet-widths} {
+    margin-top: 51px;
+  }
+
+  @media #{$desktop-widths} {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-bottom: 13px;
+    margin-right: -39px;
+    margin-top: 51px;
+  }
+}
+
+.fieldset--achievements .fieldset-title {
+  margin-bottom: 41px;
+
+  @media #{$desktop-widths} {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset--achievements .fieldset-list__item {
+  padding-bottom: 0;
+
+  @media #{$desktop-widths} {
+    padding: 0;
+    margin-right: 45px;
+    width: 260px;
+
+    &--selfie {
+      order: 1;
+    }
+
+    &--beach {
+      order: 4;
+    }
+
+    &--norris {
+      order: 2;
+    }
+
+    &--souvenir {
+      order: 5;
+    }
+
+    &--tower {
+      order: 3;
+    }
+
+    &--hotel {
+      order: 6;
+    }
+  }
+}
+
+.fieldset__title {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $pink;
+  padding-top: 36px;
+  padding-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media #{$mobile-widths-only} {
+    max-width: 280px;
+  }
+
+  @media #{$tablet-widths} {
+    position: absolute;
+    padding: 0;
+    right: 0;
+    left: 0;
+    top: -10px;
+  }
+}
+
+.fieldset__heading {
+  @media #{$tablet-widths} {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: $white;
+  }
+}

@@ -1,0 +1,130 @@
+.fieldset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset-list__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 36px;
+  }
+}
+
+.fieldset-list__item input[type="text"],
+.fieldset-list__item input[type="tel"],
+.fieldset-list__item input[type="email"] {
+  border: 2px solid $table-border;
+  display: block;
+  border-radius: 2px;
+  padding: 19px 19px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  appearance: none;
+  background-color: transparent;
+  z-index: 33;
+
+  &::placeholder {
+    color: $blue;
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
+}
+
+.fieldset-list__item input[type="tel"],
+.fieldset-list__item input[type="email"] {
+  @media #{$tablet-widths} {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset-list__item input[type="checkbox"],
+.fieldset-list__item input[type="radio"] {
+  display: none;
+}
+
+.fieldset-list__item input[type="checkbox"] + label,
+.fieldset-list__item input[type="radio"] + label {
+  cursor: pointer;
+}
+
+.fieldset-list__item input[type="checkbox"] + label::before,
+.fieldset-list__item input[type="radio"] + label::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  box-sizing: border-box;
+  width: 39px;
+  height: 39px;
+  border: 2px solid $table-border;
+  background-color: $white;
+
+  @media #{$tablet-widths} {
+    left: 58px;
+  }
+
+  @media #{$desktop-widths} {
+    left: 0;
+  }
+}
+
+.fieldset-list__item input[type="checkbox"] + label::before {
+  top: 1px;
+}
+
+.fieldset-list__item input[type="checkbox"]:checked + label::before {
+  background-image: url("../../img/icon-yes-checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: 55% 50%;
+  background-size: 64%;
+  transition: background 0s;
+}
+
+.fieldset-list__item input[type="checkbox"] + label:hover::before,
+.fieldset-list__item input[type="radio"] + label:hover::before {
+  border-color: $blue;
+}
+
+.fieldset-list__item input[type="checkbox"] + label:active::before,
+.fieldset-list__item input[type="radio"] + label:active::before {
+  border-color: $pink;
+}
+
+.fieldset-list__item input[type="radio"] + label::before {
+  top: -4px;
+  border-radius: 50%;
+
+  @media #{$desktop-widths} {
+    left: 58px;
+  }
+}
+
+.fieldset-list__item input[type="radio"]:checked + label::after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 8px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+
+  @media #{$tablet-widths} {
+    left: 70px;
+  }
+}
